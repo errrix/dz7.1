@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@main-font-weight: 400;
+@main-font: "Source Sans Pro";
+header{
+	background: #f5f7fb;
+	min-height: 41px;
+	.container{
+		.row-header{
+			margin-top: 15px;
+			margin-bottom: 15px;
+			.col-lg-4{
+				a{
+					color: #506a85;
+					font-family: @main-font;
+					font-size: 12px;
+					font-weight: @main-font-weight;
+					text-decoration: none;
+					&:first-child{
+						padding-right: 28px;
+					}
+					&:first-child::before{
+						content: "";
+						display: inline-block;
+						width: 11px;
+						height: 9px;
+						margin-right: 8px;
+						background: url("../img/icon-mail-1.png") center no-repeat;
+					}
+					&:last-child::before{
+						content: "";
+						display: inline-block;
+						width: 7px;
+						height: 13px;
+						margin-right: 10px;
+						background: url("../img/icon-mobile.png") center no-repeat;
+					}
+				}
+			}
+		}
+	}
+}
+.social-menu {
+	padding: 0;
+	a {
+		padding: 15px 9px;
+	}
+}
+ .main-menu{
+ 	margin-top: 37px;
+ 	background: #fff;
+ 	border: none;
+ 	.navbar-header{
+ 		a {padding: 0;}
+ 	}
+ 	.ul-main-menu{
+ 		margin-top: -12px;
+		li{
+			a{
+				padding: 21px 22px 19px 22px;
+				color: #506a85;
+				font-family: "Source Sans Pro";
+				font-size: 15px;
+				font-weight: 700;
+				text-transform: uppercase;
+					@media (min-width: 992px) and (max-width: 1169px) {
+						font-size: 14px;
+					}
+					@media (min-width: 768px) and (max-width: 991px) {
+						font-size: 12px;
+						padding: 10px 11px 13px 11px;
+					}
+					@media (min-width: 1px) and (max-width: 767px) {
+						font-size: 12px;
+						padding: 10px 11px 13px 11px;
+					}
+				&:hover{
+					background-color: #f5f7fb;
+					color: #00bc9c;
+				}
+			}
+		}
+ 	}	
+ }
+ .icon-search{
+ 	padding-top: 42px;
+ }
